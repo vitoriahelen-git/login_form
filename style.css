@@ -1,24 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: gray;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.titulo{ 
+  font-size: 3.00em;
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
 }
 
 form {
   display: flex;
   flex-flow: column;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(53, 51, 51);
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 0 0 black;
+  
 }
 
-input,
-button,
+label {
+  font-family: 'Permanent Marker', cursive ;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.50em;
+  color: white;
+  margin-top: 10px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 10px;
+ 
+}
+
+button {
+  border-radius: 50px;
+  font-family: 'Zen Dots', cursive;
+  font-size: 1.00em;
+  width: 250px;
+  height: 50px;
+  margin-top: 40px;
+  
+}
 a {
   outline: none;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Fredoka One', cursive;
 }
 
 form .linha {
   display: flex;
-  flex-flow: row; /* column = form vertical, row = form horizontal */
+  flex-flow: column; /* column = form vertical, row = form horizontal */
+  align-items: center;
 }
